@@ -1,6 +1,8 @@
 <?php
-// Ruta absoluta al proyecto (opcional pero recomendado)
+// Ruta absoluta al proyecto
 define('BASE_PATH', dirname(__DIR__));
 
-// Incluye el enrutador
+
 require_once BASE_PATH . '/routes/web.php';
+require_once __DIR__ . '/../config/Database.php';
+require_once __DIR__ . '/../app/models/Producto.php';

@@ -1,0 +1,235 @@
+/* Estilos generales */
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+table td {
+    border-bottom: 3px solid #727272;
+    border-right: 0;
+}
+
+.dashboard table th {
+    background-color: #4E4E4E;
+    border-right: 1px solid #ddd;
+    color: white;
+}
+
+/* Botones y acciones */
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.search {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.actions a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+/* Paginación */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.pagination .active {
+    font-weight: bold;
+}
+
+
+.actions .btn-view {
+  background-color: #f1c40f;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+.btn-view:hover {
+    background-color: #af9631;
+}
+
+.actions .btn-edit {
+  background-color: #3498db;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+.btn-edit:hover {
+    background-color: #487695;
+}
+.actions .btn-delete {
+  background-color: #e74c3c;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+.btn-delete:hover {
+    background-color: #85362d;
+}
+
+.btn-create:hover {
+    background-color: #5893ba;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-content table th,
+.modal-content table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #727272;
+  border-radius: 5px;
+}
+
+.modal-content .modal-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.modal-content .modal-actions button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.modal-content .modal-actions button:hover {
+  background-color: #0056b3;
+}
+
+#closeModalEdit {
+  float: right;
+  cursor: pointer;
+  font-size: 36px;
+  margin-top: -15px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+#deleteModal .modal-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+#deleteModal #confirmDeleteBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+#deleteModal #confirmDeleteBtn:hover {
+  background-color: #a71d2a;
+}
+
+#deleteModal #cancelDeleteBtn {
+  background-color: #6c757d;
+  color: white;
+}
+
+#deleteModal #cancelDeleteBtn:hover {
+  background-color: #565e64;
+}
