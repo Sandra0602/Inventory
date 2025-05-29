@@ -65,4 +65,4 @@
 <script>
   const ventasPorMes = <?= json_encode($ventas); ?>;
 </script>
-<script src="/Inventory/public/js/script.js"></script>
+<script src="/actividad/public/js/script.js"></script>

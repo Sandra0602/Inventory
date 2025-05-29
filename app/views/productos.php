@@ -183,9 +183,9 @@ require_once __DIR__ . '/../models/Producto.php';
   </div>
 </div>
 
-    <script src="/Inventory/public/js/modalVer.js"></script>
-    <script src="/Inventory/public/js/modalEditar.js"></script>
-    <script src="/Inventory/public/js/modalDelete.js"></script>
-    <script src="/Inventory/public/js/modalCrear.js"></script>
-    <script src="/Inventory/public/js/buscarProd.js"></script>
+    <script src="/actividad/public/js/modalVer.js"></script>
+    <script src="/actividad/public/js/modalEditar.js"></script>
+    <script src="/actividad/public/js/modalDelete.js"></script>
+    <script src="/actividad/public/js/modalCrear.js"></script>
+    <script src="/actividad/public/js/buscarProd.js"></script>
 
